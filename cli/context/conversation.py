@@ -79,7 +79,7 @@ class Conversation:
         Parameters:
             - filename (str): Name of the file to save the memory.
         """
-        self.memory.save_to_file(filename)
+        return self.memory.save_to_file(filename)
 
     def load_memory(self, filename="memory.json"):
         """
@@ -88,7 +88,7 @@ class Conversation:
         Parameters:
             - filename (str): Name of the file to load the memory.
         """
-        self.memory.load_from_file(filename)
+        return self.memory.load_from_file(filename)
 
     def clear_memory(self):
         """Clear the conversation memory."""
@@ -97,7 +97,7 @@ class Conversation:
     def format_output(self, user_prompt, assistant_response):
         """
         Format the output for better presentation.
-        
+
         Parameters:
             - user_prompt (str): User's input.
             - assistant_response (str): Assistant's generated response.

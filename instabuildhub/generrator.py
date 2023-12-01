@@ -67,11 +67,11 @@ class CodeGenerator:
                 # Extract class information
                 _, class_name, class_description = entry.split(":")
                 class_info = (class_name.strip(), class_description.strip(), [])
-            elif entry.startswith("method:"):
+            elif entry.startswith("def:"):
                 # Extract method information
                 _, method_name, method_parameters = entry.split(":")
                 methods.append((method_name.strip(), [param.strip() for param in method_parameters.split(",")]))
-            elif entry.startswith("import:"):
+            elif entry.startswith("import") or entry.startswith("from"):
                 # Extract import statement
                 _, import_statement = entry.split(":")
                 imports.append(import_statement.strip())
