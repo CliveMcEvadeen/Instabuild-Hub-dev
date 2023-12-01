@@ -2,6 +2,8 @@ import os
 import shutil
 from typing import List, Dict
 import argparse
+import mimetypes
+import chardet
 
 class Builder:
     """
@@ -160,8 +162,44 @@ class Builder:
         # Rename the file
         os.rename(old_file_path, new_file_path)
 
-    def _extension(extensio):
-        pass
+
+    def choose_file_extension_sophisticated(content: bytes) -> str:
+        """
+        Choose the appropriate file extension based on the content using a sophisticated approach.
+
+        Parameters:
+            - content (bytes): Content of the file as bytes.
+
+        Returns:
+            - str: Chosen file extension (e.g., ".txt", ".json", ".py").
+        """
+        # Detect MIME type
+        mime, _ = mimetypes.guess_type('filename', bytes=content)
+
+        # Detect character encoding
+        encoding = chardet.detect(content)['encoding']
+
+        if mime and 'python' in mime.lower():
+            return ".py"
+        elif mime and 'json' in mime.lower():
+            return ".json"
+        elif encoding and 'ascii' in encoding.lower():
+            return ".txt"
+        else:
+            # Use a generic extension if the type is not recognized
+            return ".bin"
+
+
+# Choose file extensions based on content
+# extension_python = choose_file_extension_sophisticated(file_content_python)
+# extension_json = choose_file_extension_sophisticated(file_content_json)
+# extension_text = choose_file_extension_sophisticated(file_content_text)
+
+# print(f"Chosen extension for Python content: {extension_python}")
+# print(f"Chosen extension for JSON content: {extension_json}")
+# print(f"Chosen extension for text content: {extension_text}")
+
+        
 # Example usage:
 if __name__ == "__main__":
     builder = Builder(main_folder="main_folder")
