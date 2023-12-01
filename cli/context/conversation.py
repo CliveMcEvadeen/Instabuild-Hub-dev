@@ -4,7 +4,6 @@ import tqdm
 from langchain.llms import GooglePalm
 import typer
 import argparse
-import palm_engine as palm
 import palm_engine
 import os
 from dotenv import load_dotenv
@@ -16,32 +15,28 @@ os.environ["GOOGLE_API_KEY"] = os.getenv('GOOGLE_API_KEY')
 
 class Conversation:
     
-    # request=palm_engine.PalmEngine()
-    def __init__(self, _):
+    request = palm_engine.PalmEngine()
+    
+    def __init__(self):
         self.memory = ConversationBufferMemory()
-        self.llm=GooglePalm()
-        request=palm_engine.PalmEngine()
-        self.response=request.api(_)
+        self.llm = GooglePalm()
 
-    def context(self):
-        user_prompt=self.response
+    def context(self, user_prompt):
+        response = self.request.api(user_prompt)
         conversation = ConversationChain(
-                                llm=self.llm,
-                                memory=self.memory,
-                                verbose=True
-                                )
-        output=conversation.predict(input=user_prompt)
-        self.memory.save_context({"input": user_prompt},
-                                {"output": self.response})
-
+            llm=self.llm,
+            memory=self.memory,
+            verbose=True
+        )
+        output = conversation.predict(input=user_prompt)
+        self.memory.save_context({"input": user_prompt}, {"output": response})
         return output
 
+conversation = Conversation()
+
 while True:
-     
-     user_message=input('>>: ')
-     ist=Conversation(user_message)
-     output=ist.context()
-     print(output)
-     
-     if user_message=='exit':
-         break
+    user_prompt = input("User: ")
+    if user_prompt.lower() == "exit":
+        break
+    output = conversation.context(user_prompt)
+    print("Assistant:", output)
