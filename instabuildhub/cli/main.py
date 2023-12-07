@@ -1,6 +1,6 @@
 """
 This module provides a CLI tool to interact with the instabuildhub application,
-enabling users to use OpenAI's models and define various parameters for the
+enabling users to use Google's models and define various parameters for the
 project they want to generate, improve or interact with.
 
 Main Functionality:
@@ -19,7 +19,7 @@ Main Functionality:
 - Interact with AI, databases, and archive processes based on the user-defined parameters.
 
 Notes:
-- Ensure the .env file has the `OPENAI_API_KEY` or provide it in the working directory.
+- Ensure the .env file has the `GOOGLE_API_KEY` or provide it in the working directory.
 - The default project path is set to `projects/example`.
 - For azure_endpoint, provide the endpoint for Azure OpenAI service.
 
@@ -30,6 +30,7 @@ import os
 from pathlib import Path
 # changing the openai importation
 import openai
+
 import typer
 from dotenv import load_dotenv
 
@@ -49,6 +50,7 @@ def load_env_if_needed():
     if os.getenv("GOOGLE_API_KEY") is None:
         # if there is no .env file, try to load from the current working directory
         load_dotenv(dotenv_path=os.path.join(os.getcwd(), ".env"))
+        # needs modification-----> api
     openai.api_key = os.getenv("GOOGLE_API_KEY")
 
 

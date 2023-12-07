@@ -2,8 +2,8 @@
 requires = ["setuptools", "wheel"]
 
 [project]
-name = "gpt-engineer"
-version = "0.1.0"
+name = "instabuildhub"
+version = "0.1.1"
 description = "Specify what you want it to build, the AI asks for clarification, and then builds it."
 readme = "README.md"
 requires-python = ">=3.8, <4.0"
@@ -64,11 +64,11 @@ doc = [
 
 
 [project.scripts]
-gpt-engineer = 'gpt_engineer.cli.main:app'
-ge = 'gpt_engineer.cli.main:app'
+instabuildhub = 'instabuildhub.cli.main:app'
+ge = 'instabuildhub.cli.main:app'
 
 [tool.setuptools]
-packages = ["gpt_engineer", "gpt_engineer.cli", "gpt_engineer.core", "gpt_engineer.data"]
+packages = ["instabuildhub", "instabuildhub.cli", "instabuildhub.core", "instabuildhub.data"]
 
 [tool.ruff]
 select = ["F", "E", "W", "I001"]
@@ -95,8 +95,8 @@ exclude = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/AntonOsika/gpt-engineer"
-"Bug Tracker" = "https://github.com/AntonOsika/gpt-engineer/issues"
+# "Homepage" = "https://github.com/AntonOsika/gpt-engineer"
+# "Bug Tracker" = "https://github.com/AntonOsika/gpt-engineer/issues"
 
 [tool.ruff.isort]
 known-first-party = []

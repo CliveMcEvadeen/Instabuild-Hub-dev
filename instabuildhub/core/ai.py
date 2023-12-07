@@ -30,7 +30,7 @@ import os
 from typing import List, Optional, Union
 
 import backoff
-import openai
+# import openai
 import google.generativeai as palm
 from instabuildhub.core.token_usage import TokenUsageLog
 
@@ -279,8 +279,8 @@ class AI:
         except:
             print(
                 f"Model {model_name} not available for provided API key. Reverting "
-                "to gpt-3.5-turbo. Sign up for the GPT-4 wait list here: "
-                "https://openai.com/waitlist/gpt-4-api\n"
+                "to palm api. Sign up for the api here: "
+                "https://makersuite.google.com/app/apikey\n"
             )
             return "models/text-bison-001"
 
