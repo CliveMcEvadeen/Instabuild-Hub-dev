@@ -189,7 +189,7 @@ def main(
         messages = step(ai, fileRepositories)
         fileRepositories.logs[step.__name__] = AI.serialize_messages(messages)
 
-    print("Total api cost: $ ", ai.token_usage_log.usage_cost())
+    # print("Total api cost: $ ", ai.token_usage_log.usage_cost())
 
     if check_collection_consent():
         collect_learnings(model, temperature, steps, fileRepositories)
