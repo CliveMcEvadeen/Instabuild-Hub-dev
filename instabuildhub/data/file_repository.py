@@ -30,6 +30,7 @@ Imports:
 import datetime
 import shutil
 
+import logging
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Optional, Union
@@ -247,18 +248,35 @@ def archive(dbs: FileRepositories) -> None:
         The databases to archive.
     """
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    shutil.move(
-        str(dbs.memory.path), str(dbs.archive.path / timestamp / dbs.memory.path.name)
-    )
 
-    exclude_dir = ".inseng"
-    items_to_copy = [f for f in dbs.workspace.path.iterdir() if not f.name == exclude_dir]
+    # Set up logging
+    logging.basicConfig(filename='archive_log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-    for item_path in items_to_copy:
-        destination_path = dbs.archive.path / timestamp / item_path.name
-        if item_path.is_file():
-            shutil.copy2(item_path, destination_path)
-        elif item_path.is_dir():
-            shutil.copytree(item_path, destination_path)
+    try:
+        # Move the memory database to the archive with a timestamped directory
+        memory_source_path = str(dbs.memory.path)
+        memory_destination_path = str(dbs.archive.path / timestamp / dbs.memory.path.name)
+        shutil.move(memory_source_path, memory_destination_path)
+        logging.info(f"Memory database archived: {memory_source_path} -> {memory_destination_path}")
 
-    return []
+        exclude_dir = ".inseng"
+
+        # Get a list of items to copy from the workspace, excluding the specified directory
+        items_to_copy = [f for f in dbs.workspace.path.iterdir() if not f.name == exclude_dir]
+
+        # Copy each item (file or directory) to the archive with a timestamped directory
+        for item_path in items_to_copy:
+            destination_path = dbs.archive.path / timestamp / item_path.name
+            try:
+                if item_path.is_file():
+                    shutil.copy2(str(item_path), str(destination_path))
+                elif item_path.is_dir():
+                    shutil.copytree(str(item_path), str(destination_path))
+                logging.info(f"Item archived: {item_path} -> {destination_path}")
+            except Exception as e:
+                logging.error(f"Error archiving item {item_path}: {e}")
+
+    except Exception as e:
+        logging.error(f"Error during archiving: {e}")
+
+    return
