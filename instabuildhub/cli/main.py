@@ -154,6 +154,15 @@ def main(
     path = Path(project_path).absolute()
     print("Running instabuildhub in", path, "\n")
 
+    # testing the path size
+    
+    print("Project Path Length:", len(project_path))
+    print("Workspace Path Length:", len(workspace_path))
+    print("Input Path Length:", len(input_path))
+    print("Memory Path Length:", len(memory_path))
+    print("Archive Path Length:", len(archive_path))
+    print("Project Metadata Path Length:", len(project_metadata_path))
+
     workspace_path = path
     input_path = path
 
@@ -196,6 +205,7 @@ def main(
 
     fileRepositories.logs["token_usage"] = ai.token_usage_log.format_log()
 
-
 if __name__ == "__main__":
     app()
+    # main()
+
