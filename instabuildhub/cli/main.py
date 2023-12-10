@@ -190,7 +190,7 @@ def main(
         StepsConfig.VECTOR_IMPROVE,
         StepsConfig.SELF_HEAL,
     ]:
-        archive(fileRepositories)
+        # archive(fileRepositories)
         load_prompt(fileRepositories)
 
     steps = STEPS[steps_config]

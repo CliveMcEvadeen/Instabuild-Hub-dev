@@ -249,13 +249,17 @@ def archive(dbs: FileRepositories) -> None:
     """
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    # Set up logging
+    # Set up logging-->must contribute
     logging.basicConfig(filename='archive_log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     try:
         # Move the memory database to the archive with a timestamped directory
         memory_source_path = str(dbs.memory.path)
         memory_destination_path = str(dbs.archive.path / timestamp / dbs.memory.path.name)
+
+        print(f"Memory source path: {memory_source_path}")
+        print(f"Memory destination path: {memory_destination_path}")
+
         shutil.move(memory_source_path, memory_destination_path)
         logging.info(f"Memory database archived: {memory_source_path} -> {memory_destination_path}")
 
@@ -264,9 +268,17 @@ def archive(dbs: FileRepositories) -> None:
         # Get a list of items to copy from the workspace, excluding the specified directory
         items_to_copy = [f for f in dbs.workspace.path.iterdir() if not f.name == exclude_dir]
 
+        # Create a timestamped directory for the entire archive operation
+        archive_timestamped_dir = dbs.archive.path / timestamp
+
         # Copy each item (file or directory) to the archive with a timestamped directory
         for item_path in items_to_copy:
-            destination_path = dbs.archive.path / timestamp / item_path.name
+            # Use the common timestamped directory for all items
+            destination_path = archive_timestamped_dir / item_path.name
+
+            print(f"Item source path: {item_path}")
+            print(f"Item destination path: {destination_path}")
+
             try:
                 if item_path.is_file():
                     shutil.copy2(str(item_path), str(destination_path))
@@ -279,4 +291,4 @@ def archive(dbs: FileRepositories) -> None:
     except Exception as e:
         logging.error(f"Error during archiving: {e}")
 
-    return
+    return []
