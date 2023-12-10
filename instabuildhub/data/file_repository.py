@@ -249,7 +249,7 @@ def archive(dbs: FileRepositories) -> None:
     """
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
 
-    # Set up logging-->must contribute
+    # Set up logging-->must contribute--->
     logging.basicConfig(filename='archive_log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     try:
@@ -257,8 +257,8 @@ def archive(dbs: FileRepositories) -> None:
         memory_source_path = str(dbs.memory.path)
         memory_destination_path = str(dbs.archive.path / timestamp / dbs.memory.path.name)
 
-        print(f"Memory source path: {memory_source_path}")
-        print(f"Memory destination path: {memory_destination_path}")
+        # print(f"Memory source path: {memory_source_path}")
+        # print(f"Memory destination path: {memory_destination_path}")
 
         shutil.move(memory_source_path, memory_destination_path)
         logging.info(f"Memory database archived: {memory_source_path} -> {memory_destination_path}")
@@ -276,8 +276,8 @@ def archive(dbs: FileRepositories) -> None:
             # Use the common timestamped directory for all items
             destination_path = archive_timestamped_dir / item_path.name
 
-            print(f"Item source path: {item_path}")
-            print(f"Item destination path: {destination_path}")
+            # print(f"Item source path: {item_path}")
+            # print(f"Item destination path: {destination_path}")
 
             try:
                 if item_path.is_file():
