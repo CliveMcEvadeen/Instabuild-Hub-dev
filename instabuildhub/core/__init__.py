@@ -2,15 +2,15 @@
 instabuildhub.core
 -----------------
 
-The core package for the GPT Engineer project, providing essential modules
-and functionalities that form the foundation of the application.
+As the foundational package for the instabuild project, this core module incorporates essential modules
+and functionalities that serve as the bedrock of the application.
 
 Modules:
-    - ai: Contains interfaces to the OpenAI GPT models.
-    - domain: Contains type annotations related to the steps workflow in GPT Engineer.
-    - chat_to_files: Provides utilities for converting chat model outputs to files.
-    - steps: Primary workflow definition & configuration for GPT Engineer.
-    - db: Provides file system operations for GPT Engineer projects.
+    - ai: Encompasses interfaces to the Palm models.
+    - domain: Includes type annotations related to the steps workflow in instabuild.
+    - chat_to_files: Supplies utilities for converting chat model outputs to files.
+    - steps: Serves as the primary workflow definition and configuration for instabuild.
+    - db: Manages file system operations for instabuild projects.
 
-For more specific details, refer to the docstrings within each module.
+For more intricate details, consult the docstrings within each respective module.
 """

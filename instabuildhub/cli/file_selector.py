@@ -1,29 +1,25 @@
 """
-This module provides functionalities for selecting files from both a graphical file
-explorer and terminal-based file explorer.
+This module encompasses functionalities for the selection of files through both a graphical file
+explorer and a terminal-based file explorer.
 
-It allows the user to choose files for the purpose of context improvement. This module
-provides a tree-based display in the terminal to enable file selection with support for
-navigating through directories and ignoring specified directories.
+It facilitates the user in choosing files to enhance context, offering a tree-based display within the terminal for seamless file selection. This includes support for directory navigation and the ability to exclude specified directories.
 
 Features:
-    - Supports both graphical (using `tkinter`) and terminal-based file selection.
-    - Provides a tree-based display of directories and files.
-    - Allows for custom filtering of displayed files and directories.
-    - Support to reuse a previous file selection list.
-    - Option to ignore specific directories (e.g. "site-packages", "node_modules", "venv").
+    - Supports both graphical file selection (using `tkinter`) and terminal-based file selection.
+    - Presents a tree-based display of directories and files.
+    - Allows custom filtering of displayed files and directories.
+    - Provides an option to reuse a previously selected list of files.
+    - Ability to exclude specific directories (e.g., "site-packages," "node_modules," "venv").
 
 Classes:
-    - DisplayablePath: Represents a displayable path in a file explorer, allowing for a
-      tree structure display in the terminal.
-    - TerminalFileSelector: Enables terminal-based file selection.
+    - DisplayablePath: Represents a displayable path within a file explorer, enabling a tree structure display in the terminal.
+    - TerminalFileSelector: Facilitates file selection through the terminal interface.
 
 Functions:
-    - is_in_ignoring_extensions: Checks if a path should be ignored based on predefined rules.
-    - ask_for_files: Asks user to select files from either GUI or terminal or uses a previous
-      file list.
-    - gui_file_selector: Displays a GUI for file selection.
-    - terminal_file_selector: Displays a terminal interface for file selection.
+    - should_ignore_path: Determines if a path should be ignored based on predefined rules.
+    - prompt_file_selection: Prompts the user to select files, offering choices between GUI, terminal, or utilizing a previous file list.
+    - display_gui_file_selector: Initiates a GUI for file selection.
+    - display_terminal_file_selector: Initiates a terminal interface for file selection.
 
 Dependencies:
     - os
@@ -34,8 +30,7 @@ Dependencies:
     - typing
 
 Note:
-    This module is built on top of `instabuildhub.core.db` and assumes existence and
-    functionalities provided by DB and DBs classes.
+    This module builds upon `instabuildhub.core.db` and assumes the presence and functionality provided by the DB and DBs classes.
 """
 
 import os

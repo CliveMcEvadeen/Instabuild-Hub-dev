@@ -1,28 +1,26 @@
 """
-This module provides a CLI tool to interact with the instabuildhub application,
-enabling users to use Google's models and define various parameters for the
-project they want to generate, improve or interact with.
+This module offers a command-line interface (CLI) tool for seamless interaction with the 
+instabuildhub application. It empowers users to leverage Google's models and configure various 
+parameters essential for generating, enhancing, or engaging with projects.
 
-Main Functionality:
----------------------
-- Load environment variables needed to work with OpenAI.
-- Allow users to specify parameters such as:
-  - Project path
-  - Model type (default to palm api)
-  - Temperature
-  - Step configurations
-  - Code improvement mode
-  - Lite mode for lighter operations
-  - Azure endpoint for Azure OpenAI services
-  - Using project's preprompts or default ones
-  - Verbosity level for logging
-- Interact with AI, databases, and archive processes based on the user-defined parameters.
+Key Features:
+Initialize environment variables required for OpenAI operations.
+Empower users to define parameters such as:
+Project directory
+Model selection (defaults to palm API)
+Temperature settings
+Step configurations
+Code enhancement mode
+Lite mode for resource-efficient operations
+Azure endpoint for Azure OpenAI services
+Utilization of project-specific preprompts or default ones
+Logging verbosity level
+Engage with AI, databases, and archival processes according to user-specified parameters.
+Additional Information:
 
-Notes:
-- Ensure the .env file has the `GOOGLE_API_KEY` or provide it in the working directory.
-- The default project path is set to `projects/example`.
-- For azure_endpoint, provide the endpoint for Azure OpenAI service.
-
+Make sure the .env file contains the GOOGLE_API_KEY or provide it in the current working directory.
+The default project directory is established at projects/example.
+When using Azure services, specify the Azure endpoint for the OpenAI service.
 """
 
 import logging
@@ -82,7 +80,6 @@ def preprompts_path(use_custom_preprompts: bool, input_path: Path = None) -> Pat
 @app.command()
 def main(
     project_path: str = typer.Argument("projects/example", help="path"),
-    # initial-gpt-4--sets to true
     model: str = typer.Argument("palm", help="model id string"),
     temperature: float = 0.1,
     steps_config: StepsConfig = typer.Option(

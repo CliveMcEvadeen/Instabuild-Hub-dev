@@ -1,45 +1,40 @@
 """
-This module provides tools and data structures for supporting a feedback loop in the GPT Engineer application.
+This module furnishes tools and data structures designed to support a feedback loop within the palm application.
 
-The primary intent of this module is to gather feedback from the user on the output of the gpt-engineer tool,
-with their consent, and to store this feedback for further analysis and improvement of the tool.
+The primary objective of this module is to solicit feedback from users regarding the output of the palm-engineer tool, with their explicit consent. Subsequently, this feedback is stored for in-depth analysis and continual enhancement of the tool.
 
 Classes:
-----------
-Review:
-    Represents user's review of the generated code.
-Learning:
-    Represents the metadata and feedback collected for a session in which gpt-engineer was used.
+UserFeedback:
+Represents the user's evaluation of the generated code.
+LearningSession:
+Captures metadata and feedback amassed during a session utilizing the palm-engineer tool.
 
 Functions:
-----------
-human_review_input() -> Review:
-    Interactively gathers feedback from the user regarding the performance of generated code.
+gather_user_feedback() -> UserFeedback:
+Facilitates an interactive process to obtain user feedback on the performance of generated code.
 
-check_consent() -> bool:
-    Checks if the user has previously given consent to store their data and if not, asks for it.
+validate_user_consent() -> bool:
+Verifies whether the user has previously granted consent to store their data; if not, requests consent.
 
-collect_consent() -> bool:
-    Verifies if the user has given consent to store their data or prompts for it.
+confirm_data_consent() -> bool:
+Validates if the user has given consent to store their data or prompts them to provide it.
 
-ask_if_can_store() -> bool:
-    Asks the user if it's permissible to store their data for gpt-engineer improvement.
+inquire_data_storage_permission() -> bool:
+Asks the user for permission to store their data, essential for improving palm-engineer.
 
-logs_to_string(steps: List[Step], logs: DB) -> str:
-    Converts logs of steps into a readable string format.
+format_logs(steps: List[Step], logs: DB) -> str:
+Converts logs of steps into a comprehensible string format.
 
-extract_learning(model: str, temperature: float, steps: List[Step], dbs: DBs, steps_file_hash) -> Learning:
-    Extracts feedback and session details to create a Learning instance.
+parse_learning_data(model: str, temperature: float, steps: List[Step], dbs: DBs, steps_file_hash) -> LearningSession:
+Extracts feedback and session details to create a LearningSession instance.
 
-get_session() -> str:
-    Retrieves a unique identifier for the current user session.
+retrieve_session_identifier() -> str:
+Obtains a unique identifier for the current user session.
 
 Constants:
-----------
-TERM_CHOICES:
-    Terminal color choices for user interactive prompts.
+COLOR_CHOICES:
+Terminal color options for interactive user prompts.
 """
-
 import json
 import random
 import tempfile
@@ -107,7 +102,7 @@ def human_review_input() -> Review:
         return None
     print()
     print(
-        colored("To help gpt-engineer learn, please answer 3 questions:", "light_green")
+        colored("To help palm-engineer learn, please answer 3 questions:", "light_green")
     )
     print()
 
@@ -151,7 +146,7 @@ def check_collection_consent() -> bool:
     Check if the user has given consent to store their data.
     If not, ask for their consent.
     """
-    path = Path(".gpte_consent")
+    path = Path(".palme_consent")
     if path.exists() and path.read_text() == "true":
         return True
     else:
@@ -163,24 +158,24 @@ def ask_collection_consent() -> bool:
     Ask the user for consent to store their data.
     """
     answer = input(
-        "Is it ok if we store your prompts to help improve GPT Engineer? (y/n)"
+        "Is it ok if we store your prompts to help improve palm? (y/n)"
     )
     while answer.lower() not in ("y", "n"):
         answer = input("Invalid input. Please enter y or n: ")
 
     if answer.lower() == "y":
-        path = Path(".gpte_consent")
+        path = Path(".palme_consent")
         path.write_text("true")
         print(colored("Thank you️", "light_green"))
         print()
         print(
-            "(If you no longer wish to participate in data collection, delete the file .gpte_consent)"
+            "(If you no longer wish to participate in data collection, delete the file .palme_consent)"
         )
         return True
     else:
         print(
             colored(
-                "No worries! GPT Engineer will not collect your prompts. ❤️",
+                "No worries! palm will not collect your prompts. ❤️",
                 "light_green",
             )
         )

@@ -19,4 +19,4 @@ src/hello_world.py
 print("Hello World")
 ```
 
-Do not comment on what every file does. Please note that the code should be fully functional. No placeholders.
+Do not comment on what every file does. Please note that the code should be fully functional and  written in a professional way.also make sure the code is written in OOP structure and functional. No placeholders.

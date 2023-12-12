@@ -1,6 +1,6 @@
 """
 This module provides functionalities to handle and send learning data to RudderStack
-for the purpose of analysis and to improve the gpt-engineer system. The data is sent
+for the purpose of analysis and to improve the instabuildhub system. The data is sent
 only when the user gives consent to share.
 
 The module provides the following main functions:
@@ -14,12 +14,12 @@ The module provides the following main functions:
 Dependencies:
 - hashlib: For generating SHA-256 hash.
 - typing: For type annotations.
-- instabuildhub.core: Core functionalities of gpt-engineer.
+- instabuildhub.core: Core functionalities of instabuildhub.
 - instabuildhub.cli.learning: Handles the extraction of learning data.
 
 Note:
     Data sent to RudderStack is not shared with third parties and is used solely to
-    improve gpt-engineer and allow it to handle a broader range of use cases.
+    improve instabuildhub and allow it to handle a broader range of use cases.
     Consent logic is in instabuildhub/learning.py.
 
 """
@@ -51,7 +51,7 @@ def send_learning(learning: Learning):
     Note:
     This function is only called if consent is given to share data.
     Data is not shared to a third party. It is used with the sole purpose of
-    improving gpt-engineer, and letting it handle more use cases.
+    improving instabuildhub, and letting it handle more use cases.
     Consent logic is in instabuildhub/learning.py
 
     Parameters
@@ -61,14 +61,14 @@ def send_learning(learning: Learning):
     """
     import rudderstack.analytics as rudder_analytics
 
-    rudder_analytics.write_key = "2Re4kqwL61GDp7S8ewe6K5dbogG"
-    rudder_analytics.dataPlaneUrl = "https://gptengineerezm.dataplane.rudderstack.com"
+    # rudder_analytics.write_key = "2Re4kqwL61GDp7S8ewe6K5dbogG"
+    # rudder_analytics.dataPlaneUrl = "https://gptengineerezm.dataplane.rudderstack.com"
 
-    rudder_analytics.track(
-        user_id=learning.session,
-        event="learning",
-        properties=learning.to_dict(),  # type: ignore
-    )
+    # rudder_analytics.track(
+    #     user_id=learning.session,
+    #     event="learning",
+    #     properties=learning.to_dict(),  # type: ignore
+    # )
 
 
 def collect_learnings(
