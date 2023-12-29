@@ -1,8 +1,8 @@
-## Project Title: "AGI Nexus: A Transformative Journey to Comprehensive Intelligence"
+## Project Title: "CLIVE( Cognitively Laveraging Itelligence  with Versatile Evolution ): A Transformative Journey to Comprehensive SELF-It Intelligence"
 
 ### Project Overview:
 
-Embarking on an extraordinary mission, "AGI Nexus" aims to craft an Artificial General Intelligence (AGI) system that seamlessly integrates with the vast knowledge of the internet, continuously learns, adapts in real-time, and positively impacts society. This comprehensive project plan unfolds across five interconnected modules, each meticulously designed to accelerate the development of AGI and ensure a profound societal influence.
+Embarking on an extraordinary mission, "CLIVE" aims to craft an Artificial General Intelligence (AGI) system that seamlessly integrates with the vast knowledge of the internet, continuously learns, adapts in real-time, and positively impacts society. This comprehensive project plan unfolds across five interconnected modules, each meticulously designed to accelerate the development of AGI and ensure a profound societal influence.
 
 ### Module 1: **Autonomous Internet Research**
 
@@ -102,7 +102,7 @@ Enable AGI to adapt in real-time, deploy updates seamlessly, and ensure continuo
 
 ### Societal Impact and Ethical Considerations:
 
-As AGI Nexus unfolds, its positive societal impact will be manifold:
+As CLIVE unfolds, its positive societal impact will be manifold:
 
 - **Accessible Innovation:** Democratize access to advanced problem-solving, benefitting individuals across various domains and skill levels.
   
@@ -116,4 +116,4 @@ As AGI Nexus unfolds, its positive societal impact will be manifold:
 
 - **Economic Innovation:** Drive economic growth through collaborative innovation and cross-disciplinary collaboration.
 
-This comprehensive roadmap fuses technical intricacies with ethical responsibility, paving the way for a future where AGI not only solves complex problems but also positively impacts society in ways that are both profound and uplifting. "AGI Nexus" stands as a beacon of transformative technology, ushering in a new era of intelligent collaboration.
+This comprehensive roadmap fuses technical intricacies with ethical responsibility, paving the way for a future where AGI not only solves complex problems but also positively impacts society in ways that are both profound and uplifting. "CLIVE" stands as a beacon of transformative technology, ushering in a new era of intelligent collaboration.
