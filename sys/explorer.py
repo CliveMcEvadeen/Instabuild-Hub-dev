@@ -280,13 +280,13 @@ class Explorer:
             with open(file_path, 'w', encoding='utf-8') as file:
                 if content is not None:
                     file.write(content)
-            print(f"File '{file_name}.{file_type}' created.")
+            return f"File '{file_name}.{file_type}' created."
         except FileExistsError:
-            print(f"Error: File '{file_name}.{file_type}' already exists.")
+            return f"Error: File '{file_name}.{file_type}' already exists."
         except PermissionError:
-            print(f"Error: Permission denied to create file '{file_name}.{file_type}'.")
+            return f"Error: Permission denied to create file '{file_name}.{file_type}'."
         except Exception as e:
-            print(f"Error creating file: {str(e)}")
+            return f"Error creating file: {str(e)}"
 
     def create_new_file(self, new_file_name: str, content: str = None):
         """
@@ -298,18 +298,17 @@ class Explorer:
             with open(new_file_path, 'w', encoding='utf-8') as file:
                 if content is not None:
                     file.write(content)
-            print(f"File '{new_file_name}' created.")
+            return f"File '{new_file_name}' created."
         except FileExistsError:
-            print(f"Error: File '{new_file_name}' already exists.")
+            return f"Error: File '{new_file_name}' already exists."
         except Exception as e:
-            print(f"Error creating file: {str(e)}")
+            return f"Error creating file: {str(e)}"
 
     def delete_file(self, file_name: str):
         """
         Delete a file in the current directory.
         """
         file_path = self.current_directory / file_name
-
         try:
             os.remove(file_path)
             print(f"File '{file_name}' deleted.")
