@@ -25,6 +25,8 @@ Key Features:
 
 import os
 import pathlib
+import shutil
+import chardet
 import magic
 import hashlib
 import zipfile
@@ -45,12 +47,15 @@ class Explorer:
             "path": str(self.current_directory),
             "created": self.current_directory.stat().st_ctime,
             "modified": self.current_directory.stat().st_mtime,
+            # "items": [item.name for item in sorted(os.scandir(self.current_directory))],
+
         }
         print("Current Directory:")
         print(f"Name: {dir_info['name']}")
         print(f"Path: {dir_info['path']}")
         print(f"Created: {dir_info['created']}")
         print(f"Modified: {dir_info['modified']}")
+        # print(f"items: {dir_info['items']}")
         print("-" * 40)
 
     def get_all_files(self, sort_by: str = "name", file_type: str = None) -> List[dict]:
@@ -67,6 +72,19 @@ class Explorer:
         # Sort files based on the specified criteria
         file_list.sort(key=lambda x: x.get(sort_by, 0))
         return file_list
+    
+    def print_file_info(self, files_info: List[dict]):
+        """
+        Print information about files.
+        """
+        for file_info in files_info:
+            print(f"Name: {file_info['name']}")
+            print(f"Path: {file_info['path']}")
+            print(f"Size: {file_info['size']} bytes")
+            print(f"Type: {file_info['type']}")
+            print(f"Created: {file_info['created']}")
+            print(f"Modified: {file_info['modified']}")
+            print("-" * 40)
 
     def get_file_info(self, file_path: pathlib.Path) -> dict:
         """
@@ -95,10 +113,15 @@ class Explorer:
         """
         matching_files = []
         for file_path in self.current_directory.iterdir():
-            if file_path.is_file() and keyword.lower() in file_path.read_text().lower():
-                file_info = self.get_file_info(file_path)
-                matching_files.append(file_info)
+            if file_path.is_file():
+                try:
+                    if keyword.lower() in file_path.read_text().lower():
+                        file_info = self.get_file_info(file_path)
+                        matching_files.append(file_info)
+                except Exception as e:
+                    print(f"Error reading {file_path}: {str(e)}")
         return matching_files
+
 
     def get_file_type_statistics(self) -> dict:
         """
@@ -110,20 +133,33 @@ class Explorer:
                 file_type = self.get_file_type(file_path)
                 file_type_statistics[file_type] = file_type_statistics.get(file_type, 0) + 1
         return file_type_statistics
+        # print('-' * 40)
 
     def preview_file_content(self, file_path: pathlib.Path, num_lines: int = 5):
         """
         Display a preview of the content of specific file types.
         """
-        if file_path.suffix.lower() in ['.txt', '.py', '.md', '.json']:
-            print(f"Content preview of {file_path}:")
+        # Ensure that the file exists before attempting to open it
+        if not file_path.exists():
+            print(f"File not found: {file_path}")
+            return
+
+        # Check if the file type is supported for preview
+        supported_file_types = ['.txt', '.py', '.md', '.json', '.env', '.md']
+        if file_path.suffix.lower() not in supported_file_types:
+            print(f"Cannot preview content of {file_path}. Unsupported file type.")
+            return
+
+        # Open the file and display the content preview
+        try:
             with open(file_path, 'r', encoding='utf-8') as file:
+                print(f"Content preview of {file_path}:")
                 for _ in range(num_lines):
                     line = file.readline().strip()
                     print(line)
-            print("-" * 40)
-        else:
-            print(f"Cannot preview content of {file_path}. Unsupported file type.")
+                print("-" * 40)
+        except Exception as e:
+            print(f"Error reading {file_path}: {str(e)}")
             print("-" * 40)
 
     def read_file_content(self, file_path: pathlib.Path, num_lines: int = None) -> str:
@@ -134,8 +170,11 @@ class Explorer:
             with open(file_path, 'r', encoding=self.detect_encoding(file_path)) as file:
                 content = file.read() if num_lines is None else ''.join([next(file) for _ in range(num_lines)])
             return content
+        except UnicodeDecodeError as e:
+            return f"Error decoding {file_path}: {str(e)}"
         except Exception as e:
             return f"Error reading {file_path}: {str(e)}"
+
 
     def detect_encoding(self, file_path: pathlib.Path) -> str:
         """
@@ -167,6 +206,24 @@ class Explorer:
         """
         filtered_files = [file_info for file_info in self.get_all_files() if file_info['type'].startswith(file_type)]
         return filtered_files
+    
+    
+    def rename_file(self, old_name: str, new_name: str):
+        """
+        Rename a file in the current directory.
+        """
+        old_path = self.current_directory / old_name
+        new_path = self.current_directory / new_name
+
+        try:
+            os.rename(old_path, new_path)
+            return f"File '{old_name}' renamed to '{new_name}'."
+        except FileNotFoundError:
+            return f"Error: File '{old_name}' not found."
+        except FileExistsError:
+            return f"Error: File '{new_name}' already exists."
+        except Exception as e:
+            return f"Error renaming file: {str(e)}"
 
     def download_files(self, files: List[str], destination: str):
         """
@@ -207,6 +264,109 @@ class Explorer:
                 print(f"  - {dir_name}")
             print("-" * 40)
 
+    def create_file_type(self, file_name: str, content: str = None, file_type: str = 'txt'):
+        """
+        Create a file in the current directory with specified content and type.
+        """
+        allowed_types = ['txt', 'json', 'py', 'js']  # Add more file types if needed
+
+        if file_type not in allowed_types:
+            print(f"Error: Unsupported file type '{file_type}'.")
+            return
+
+        file_path = self.current_directory / (file_name + '.' + file_type)
+
+        try:
+            with open(file_path, 'w', encoding='utf-8') as file:
+                if content is not None:
+                    file.write(content)
+            print(f"File '{file_name}.{file_type}' created.")
+        except FileExistsError:
+            print(f"Error: File '{file_name}.{file_type}' already exists.")
+        except PermissionError:
+            print(f"Error: Permission denied to create file '{file_name}.{file_type}'.")
+        except Exception as e:
+            print(f"Error creating file: {str(e)}")
+
+    def create_new_file(self, new_file_name: str, content: str = None):
+        """
+        Create a new file in the current directory.
+        """
+        new_file_path = self.current_directory / new_file_name
+
+        try:
+            with open(new_file_path, 'w', encoding='utf-8') as file:
+                if content is not None:
+                    file.write(content)
+            print(f"File '{new_file_name}' created.")
+        except FileExistsError:
+            print(f"Error: File '{new_file_name}' already exists.")
+        except Exception as e:
+            print(f"Error creating file: {str(e)}")
+
+    def delete_file(self, file_name: str):
+        """
+        Delete a file in the current directory.
+        """
+        file_path = self.current_directory / file_name
+
+        try:
+            os.remove(file_path)
+            print(f"File '{file_name}' deleted.")
+        except FileNotFoundError:
+            print(f"Error: File '{file_name}' not found.")
+        except PermissionError:
+            print(f"Error: Permission denied to delete file '{file_name}'.")
+        except Exception as e:
+            print(f"Error deleting file: {str(e)}")
+
+    def create_folder(self, folder_name: str):
+        """
+        Create a folder in the current directory if it doesn't exist.
+        Neglect the operation if the folder already exists.
+        """
+        folder_path = self.current_directory / folder_name
+
+        try:
+            os.makedirs(folder_path, exist_ok=True)
+            print(f"Folder '{folder_name}' created or already exists.")
+        except PermissionError:
+            print(f"Error: Permission denied to create folder '{folder_name}'.")
+        except Exception as e:
+            print(f"Error creating folder: {str(e)}")
+        
+    def change_directory(self, new_directory: str):
+        """
+        Change the current working directory.
+        """
+        try:
+            os.chdir(new_directory)
+            self.current_directory = pathlib.Path(new_directory).resolve()
+            print(f"Current working directory changed to: {self.current_directory}")
+        except FileNotFoundError:
+            print(f"Error: Directory '{new_directory}' not found.")
+        except PermissionError:
+            print(f"Error: Permission denied to change directory to '{new_directory}'.")
+        except Exception as e:
+            print(f"Error changing directory: {str(e)}")
+
+    def delete_directory(self, directory_name: str):
+        """
+        Delete a directory in the current working directory.
+        """
+        directory_path = self.current_directory / directory_name
+
+        try:
+            shutil.rmtree(directory_path)
+            return f"Directory '{directory_name}' deleted."
+        except FileNotFoundError:
+            return f"Error: Directory '{directory_name}' not found."
+        except PermissionError:
+            return f"Error: Permission denied to delete directory '{directory_name}'."
+        except Exception as e:
+            return f"Error deleting directory: {str(e)}"
+
+       
     def file_permission_info(self, file_name: str):
         """
         Display information about file permissions.
@@ -311,7 +471,7 @@ if __name__ == "__main__":
 
     # Download files
     files_to_download = ["example.txt", "sample.json"]
-    download_destination = "/path/to/download"
+    download_destination = "C:\\Users\\ADAN COMPUTER\\Desktop\\instabuildhub\\sys\\download"
     explorer.download_files(files_to_download, download_destination)
 
     # Extract archive
