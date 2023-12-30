@@ -57,10 +57,10 @@ class ProjectStructure:
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
                 content = file.read()
-                print(f"{Fore.GREEN}  " * indent + f"{Fore.GREEN}Content:")
+                return f"{Fore.GREEN}  " * indent + f"{Fore.GREEN}Content:")
                 print(content)
         except Exception as e:
-            print(f"{Fore.RED}  " * indent + f"{Fore.RED}Error reading content of {file_name}: {str(e)}")
+            return f"{Fore.RED}  " * indent + f"{Fore.RED}Error reading content of {file_name}: {str(e)}"
 
     def read_project_structure(self):
         self._build_structure(self.base_path, self.structure)
