@@ -1,242 +1,375 @@
 {
-    "scripts": {
+    ".git": {
         "type": "folder",
         "size": null,
         "modified": null,
         "content": {
-            "clean_benchmarks.py": {
-                "type": "file",
-                "size": "760B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "test_api.py": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "benchmark.py": {
-                "type": "file",
-                "size": "4K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "print_chat.py": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            }
-        }
-    },
-    "tests": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "test_install.py": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "test_collection_consent.py": {
-                "type": "file",
-                "size": "3K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "test_ai.py": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "data": {
+            "objects": {
                 "type": "folder",
                 "size": null,
                 "modified": null,
                 "content": {
-                    "test_code_vector_repository.py": {
+                    "pack": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {}
+                    },
+                    "info": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {}
+                    }
+                }
+            },
+            "info": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {}
+            },
+            "refs": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {
+                    "heads": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {}
+                    },
+                    "tags": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {}
+                    }
+                }
+            },
+            "branches": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {}
+            },
+            "hooks": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {}
+            }
+        }
+    },
+    "Instabuild-Hub-dev": {
+        "type": "folder",
+        "size": null,
+        "modified": null,
+        "content": {
+            "scripts": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {
+                    "clean_benchmarks.py": {
+                        "type": "file",
+                        "size": "760B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "test_api.py": {
+                        "type": "file",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "benchmark.py": {
                         "type": "file",
                         "size": "4K",
-                        "modified": "2023-12-31 07:59:32",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     },
-                    "example_snake_files.py": {
+                    "print_chat.py": {
                         "type": "file",
-                        "size": "37K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "test_file_repository.py": {
-                        "type": "file",
-                        "size": "3K",
-                        "modified": "2023-12-31 07:59:32",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     }
                 }
             },
-            "steps": {
+            "tests": {
                 "type": "folder",
                 "size": null,
                 "modified": null,
                 "content": {
-                    "test_archive.py": {
+                    "test_install.py": {
                         "type": "file",
                         "size": "1K",
-                        "modified": "2023-12-31 07:59:32",
+                        "modified": "2023-12-31 13:12:29",
+                        "content": null
+                    },
+                    "test_collection_consent.py": {
+                        "type": "file",
+                        "size": "3K",
+                        "modified": "2023-12-31 13:12:29",
+                        "content": null
+                    },
+                    "test_ai.py": {
+                        "type": "file",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:29",
+                        "content": null
+                    },
+                    "data": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {
+                            "test_code_vector_repository.py": {
+                                "type": "file",
+                                "size": "4K",
+                                "modified": "2023-12-31 13:12:29",
+                                "content": null
+                            },
+                            "example_snake_files.py": {
+                                "type": "file",
+                                "size": "37K",
+                                "modified": "2023-12-31 13:12:29",
+                                "content": null
+                            },
+                            "test_file_repository.py": {
+                                "type": "file",
+                                "size": "3K",
+                                "modified": "2023-12-31 13:12:29",
+                                "content": null
+                            }
+                        }
+                    },
+                    "steps": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {
+                            "test_archive.py": {
+                                "type": "file",
+                                "size": "1K",
+                                "modified": "2023-12-31 13:12:29",
+                                "content": null
+                            },
+                            "__init__.py": {
+                                "type": "file",
+                                "size": "0B",
+                                "modified": "2023-12-31 13:12:29",
+                                "content": null
+                            }
+                        }
+                    },
+                    "test_chat_to_files.py": {
+                        "type": "file",
+                        "size": "5K",
+                        "modified": "2023-12-31 13:12:29",
+                        "content": null
+                    },
+                    "test_collect.py": {
+                        "type": "file",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:29",
                         "content": null
                     },
                     "__init__.py": {
                         "type": "file",
                         "size": "0B",
-                        "modified": "2023-12-31 07:59:32",
+                        "modified": "2023-12-31 13:12:29",
+                        "content": null
+                    },
+                    "test_token_usage.py": {
+                        "type": "file",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:29",
                         "content": null
                     }
                 }
             },
-            "test_chat_to_files.py": {
+            ".dockerignore": {
                 "type": "file",
-                "size": "5K",
-                "modified": "2023-12-31 07:59:32",
+                "size": "710B",
+                "modified": "2023-12-31 13:12:28",
                 "content": null
             },
-            "test_collect.py": {
+            "citation.cff": {
                 "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
+                "size": "299B",
+                "modified": "2023-12-31 13:12:28",
                 "content": null
             },
-            "__init__.py": {
-                "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "test_token_usage.py": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            }
-        }
-    },
-    ".dockerignore": {
-        "type": "file",
-        "size": "710B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "citation.cff": {
-        "type": "file",
-        "size": "299B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "evals": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "IMPROVE_CODE_RESULTS.md": {
-                "type": "file",
-                "size": "4K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "new_code_eval.yaml": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "evals_existing_code.py": {
-                "type": "file",
-                "size": "2K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "existing_code_eval.yaml": {
-                "type": "file",
-                "size": "2K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "EVAL_NEW_CODE_RESULTS.md": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "README.md": {
-                "type": "file",
-                "size": "645B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "evals_new_code.py": {
-                "type": "file",
-                "size": "2K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "eval_tools.py": {
-                "type": "file",
-                "size": "6K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "known_code_blobs": {
+            "evals": {
                 "type": "folder",
                 "size": null,
                 "modified": null,
                 "content": {
-                    "web_todo_files.txt": {
+                    "IMPROVE_CODE_RESULTS.md": {
                         "type": "file",
-                        "size": "2K",
-                        "modified": "2023-12-31 07:59:32",
+                        "size": "4K",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     },
-                    "snake_game_files.txt": {
+                    "new_code_eval.yaml": {
+                        "type": "file",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "evals_existing_code.py": {
                         "type": "file",
                         "size": "2K",
-                        "modified": "2023-12-31 07:59:32",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "existing_code_eval.yaml": {
+                        "type": "file",
+                        "size": "2K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "EVAL_NEW_CODE_RESULTS.md": {
+                        "type": "file",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "README.md": {
+                        "type": "file",
+                        "size": "645B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "evals_new_code.py": {
+                        "type": "file",
+                        "size": "2K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "eval_tools.py": {
+                        "type": "file",
+                        "size": "6K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "known_code_blobs": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {
+                            "web_todo_files.txt": {
+                                "type": "file",
+                                "size": "2K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "snake_game_files.txt": {
+                                "type": "file",
+                                "size": "2K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            }
+                        }
+                    },
+                    "__init__.py": {
+                        "type": "file",
+                        "size": "0B",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     }
                 }
             },
-            "__init__.py": {
-                "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            }
-        }
-    },
-    "Structure": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "structure.py": {
-                "type": "file",
-                "size": "14K",
-                "modified": "2023-12-31 08:59:37",
-                "content": null
-            },
-            "project_summary.json": {
-                "type": "file",
-                "size": "11M",
-                "modified": "2023-12-31 08:22:28",
-                "content": null
+            "Structure": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {
+                    "structure.py": {
+                        "type": "file",
+                        "size": "14K",
+                        "modified": "2023-12-31 13:25:37",
+                        "content": null
+                    },
+                    "project_summary.json": {
+                        "type": "file",
+                        "size": "11M",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "data.json": {
+                        "type": "file",
+                        "size": "2M",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "structure 2.py": {
+                        "type": "file",
+                        "size": "14K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "project_structure.json": {
+                        "type": "file",
+                        "size": "569B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "system_summary.json": {
+                        "type": "file",
+                        "size": "72K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    ".ipynb_checkpoints": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {}
+                    }
+                }
             },
             ".git": {
                 "type": "folder",
                 "size": null,
                 "modified": null,
                 "content": {
+                    "logs": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {
+                            "refs": {
+                                "type": "folder",
+                                "size": null,
+                                "modified": null,
+                                "content": {
+                                    "heads": {
+                                        "type": "folder",
+                                        "size": null,
+                                        "modified": null,
+                                        "content": {}
+                                    },
+                                    "remotes": {
+                                        "type": "folder",
+                                        "size": null,
+                                        "modified": null,
+                                        "content": {
+                                            "origin": {
+                                                "type": "folder",
+                                                "size": null,
+                                                "modified": null,
+                                                "content": {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
                     "objects": {
                         "type": "folder",
                         "size": null,
@@ -246,7 +379,14 @@
                                 "type": "folder",
                                 "size": null,
                                 "modified": null,
-                                "content": {}
+                                "content": {
+                                    "pack-bc21f7eeb8c9949f25679fbd4d1a7705a803d8ff.idx": {
+                                        "type": "file",
+                                        "size": "9K",
+                                        "modified": "2023-12-31 13:12:28",
+                                        "content": null
+                                    }
+                                }
                             },
                             "info": {
                                 "type": "folder",
@@ -278,6 +418,19 @@
                                 "size": null,
                                 "modified": null,
                                 "content": {}
+                            },
+                            "remotes": {
+                                "type": "folder",
+                                "size": null,
+                                "modified": null,
+                                "content": {
+                                    "origin": {
+                                        "type": "folder",
+                                        "size": null,
+                                        "modified": null,
+                                        "content": {}
+                                    }
+                                }
                             }
                         }
                     },
@@ -295,1447 +448,497 @@
                     }
                 }
             },
-            "data.json": {
-                "type": "file",
-                "size": "2M",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "structure 2.py": {
-                "type": "file",
-                "size": "14K",
-                "modified": "2023-12-31 08:58:32",
-                "content": null
-            },
-            "project_structure.json": {
-                "type": "file",
-                "size": "569B",
-                "modified": "2023-12-31 08:22:28",
-                "content": null
-            },
-            "Instabuild-Hub-dev": {
+            "docs": {
                 "type": "folder",
                 "size": null,
                 "modified": null,
                 "content": {
-                    "scripts": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "clean_benchmarks.py": {
-                                "type": "file",
-                                "size": "760B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "test_api.py": {
-                                "type": "file",
-                                "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "benchmark.py": {
-                                "type": "file",
-                                "size": "4K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "print_chat.py": {
-                                "type": "file",
-                                "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            }
-                        }
+                    "tracing_debugging.md": {
+                        "type": "file",
+                        "size": "997B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
                     },
-                    "tests": {
+                    "open_models.md": {
+                        "type": "file",
+                        "size": "1K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "DOCS_BUILDING.md": {
+                        "type": "file",
+                        "size": "2K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "intro": {
                         "type": "folder",
                         "size": null,
                         "modified": null,
                         "content": {
-                            "test_install.py": {
+                            "scripts.md": {
                                 "type": "file",
                                 "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             },
-                            "test_collection_consent.py": {
+                            "chat_parsing.md": {
+                                "type": "file",
+                                "size": "2K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "main_script.md": {
+                                "type": "file",
+                                "size": "2K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "ai_class.md": {
+                                "type": "file",
+                                "size": "919B",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "gate.md": {
+                                "type": "file",
+                                "size": "2K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "db_class.md": {
+                                "type": "file",
+                                "size": "1K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "# Table of Contents.md": {
+                                "type": "file",
+                                "size": "779B",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "harmony_db_ai_steps.md": {
                                 "type": "file",
                                 "size": "3K",
-                                "modified": "2023-12-31 08:59:08",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             },
-                            "test_ai.py": {
+                            "repository_stats.md": {
                                 "type": "file",
                                 "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             },
-                            "data": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "test_code_vector_repository.py": {
-                                        "type": "file",
-                                        "size": "4K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "example_snake_files.py": {
-                                        "type": "file",
-                                        "size": "37K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "test_file_repository.py": {
-                                        "type": "file",
-                                        "size": "3K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
-                            },
-                            "steps": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "test_archive.py": {
-                                        "type": "file",
-                                        "size": "1K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "__init__.py": {
-                                        "type": "file",
-                                        "size": "0B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
-                            },
-                            "test_chat_to_files.py": {
+                            "steps_module.md": {
                                 "type": "file",
-                                "size": "5K",
-                                "modified": "2023-12-31 08:59:08",
+                                "size": "2K",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             },
-                            "test_collect.py": {
+                            "preprompts.md": {
                                 "type": "file",
-                                "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
+                                "size": "3K",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             },
-                            "__init__.py": {
+                            "quick_overview.md": {
                                 "type": "file",
-                                "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "test_token_usage.py": {
-                                "type": "file",
-                                "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
+                                "size": "3K",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             }
                         }
                     },
-                    ".dockerignore": {
+                    "make.bat": {
                         "type": "file",
-                        "size": "710B",
-                        "modified": "2023-12-31 08:59:08",
+                        "size": "776B",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     },
-                    "citation.cff": {
+                    "requirements.txt": {
                         "type": "file",
-                        "size": "299B",
-                        "modified": "2023-12-31 08:59:08",
+                        "size": "272B",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     },
-                    "evals": {
+                    "conf.py": {
+                        "type": "file",
+                        "size": "5K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "create_api_rst.py": {
+                        "type": "file",
+                        "size": "2K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    }
+                }
+            },
+            "instabuildhub": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {
+                    "data": {
                         "type": "folder",
                         "size": null,
                         "modified": null,
                         "content": {
-                            "IMPROVE_CODE_RESULTS.md": {
+                            "supported_languages.py": {
+                                "type": "file",
+                                "size": "1K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "code_vector_repository.py": {
+                                "type": "file",
+                                "size": "2K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "file_repository.py": {
+                                "type": "file",
+                                "size": "9K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "__init__.py": {
+                                "type": "file",
+                                "size": "156B",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "document_chunker.py": {
                                 "type": "file",
                                 "size": "4K",
-                                "modified": "2023-12-31 08:59:08",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
-                            },
-                            "new_code_eval.yaml": {
-                                "type": "file",
-                                "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "evals_existing_code.py": {
-                                "type": "file",
-                                "size": "2K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "existing_code_eval.yaml": {
-                                "type": "file",
-                                "size": "2K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "EVAL_NEW_CODE_RESULTS.md": {
-                                "type": "file",
-                                "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "README.md": {
-                                "type": "file",
-                                "size": "645B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "evals_new_code.py": {
-                                "type": "file",
-                                "size": "2K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "eval_tools.py": {
+                            }
+                        }
+                    },
+                    "cli": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {
+                            "main.py": {
                                 "type": "file",
                                 "size": "6K",
-                                "modified": "2023-12-31 08:59:08",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             },
-                            "known_code_blobs": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "web_todo_files.txt": {
-                                        "type": "file",
-                                        "size": "2K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "snake_game_files.txt": {
-                                        "type": "file",
-                                        "size": "2K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
+                            "collect.py": {
+                                "type": "file",
+                                "size": "4K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "file_selector.py": {
+                                "type": "file",
+                                "size": "14K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "learning.py": {
+                                "type": "file",
+                                "size": "7K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
                             },
                             "__init__.py": {
-                                "type": "file",
-                                "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            }
-                        }
-                    },
-                    "Structure": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "structure.py": {
-                                "type": "file",
-                                "size": "14K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "project_summary.json": {
-                                "type": "file",
-                                "size": "11M",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "data.json": {
-                                "type": "file",
-                                "size": "2M",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "structure 2.py": {
-                                "type": "file",
-                                "size": "14K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "project_structure.json": {
-                                "type": "file",
-                                "size": "569B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            }
-                        }
-                    },
-                    ".git": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "logs": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "refs": {
-                                        "type": "folder",
-                                        "size": null,
-                                        "modified": null,
-                                        "content": {
-                                            "heads": {
-                                                "type": "folder",
-                                                "size": null,
-                                                "modified": null,
-                                                "content": {}
-                                            },
-                                            "remotes": {
-                                                "type": "folder",
-                                                "size": null,
-                                                "modified": null,
-                                                "content": {
-                                                    "origin": {
-                                                        "type": "folder",
-                                                        "size": null,
-                                                        "modified": null,
-                                                        "content": {}
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            "objects": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "pack": {
-                                        "type": "folder",
-                                        "size": null,
-                                        "modified": null,
-                                        "content": {
-                                            "pack-9e2f55b36cba613b3a34e0919e93d969be4c8853.idx": {
-                                                "type": "file",
-                                                "size": "9K",
-                                                "modified": "2023-12-31 08:59:08",
-                                                "content": null
-                                            }
-                                        }
-                                    },
-                                    "info": {
-                                        "type": "folder",
-                                        "size": null,
-                                        "modified": null,
-                                        "content": {}
-                                    }
-                                }
-                            },
-                            "info": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {}
-                            },
-                            "refs": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "heads": {
-                                        "type": "folder",
-                                        "size": null,
-                                        "modified": null,
-                                        "content": {}
-                                    },
-                                    "tags": {
-                                        "type": "folder",
-                                        "size": null,
-                                        "modified": null,
-                                        "content": {}
-                                    },
-                                    "remotes": {
-                                        "type": "folder",
-                                        "size": null,
-                                        "modified": null,
-                                        "content": {
-                                            "origin": {
-                                                "type": "folder",
-                                                "size": null,
-                                                "modified": null,
-                                                "content": {}
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            "branches": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {}
-                            },
-                            "hooks": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {}
-                            }
-                        }
-                    },
-                    "docs": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "tracing_debugging.md": {
-                                "type": "file",
-                                "size": "997B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "open_models.md": {
                                 "type": "file",
                                 "size": "1K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "DOCS_BUILDING.md": {
-                                "type": "file",
-                                "size": "2K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "intro": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "scripts.md": {
-                                        "type": "file",
-                                        "size": "1K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "chat_parsing.md": {
-                                        "type": "file",
-                                        "size": "2K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "main_script.md": {
-                                        "type": "file",
-                                        "size": "2K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "ai_class.md": {
-                                        "type": "file",
-                                        "size": "919B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "gate.md": {
-                                        "type": "file",
-                                        "size": "2K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "db_class.md": {
-                                        "type": "file",
-                                        "size": "1K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "# Table of Contents.md": {
-                                        "type": "file",
-                                        "size": "779B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "harmony_db_ai_steps.md": {
-                                        "type": "file",
-                                        "size": "3K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "repository_stats.md": {
-                                        "type": "file",
-                                        "size": "1K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "steps_module.md": {
-                                        "type": "file",
-                                        "size": "2K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "preprompts.md": {
-                                        "type": "file",
-                                        "size": "3K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "quick_overview.md": {
-                                        "type": "file",
-                                        "size": "3K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
-                            },
-                            "make.bat": {
-                                "type": "file",
-                                "size": "776B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "requirements.txt": {
-                                "type": "file",
-                                "size": "272B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "conf.py": {
-                                "type": "file",
-                                "size": "5K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "create_api_rst.py": {
-                                "type": "file",
-                                "size": "2K",
-                                "modified": "2023-12-31 08:59:08",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             }
                         }
                     },
-                    "instabuildhub": {
+                    "preprompts": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {}
+                    },
+                    "core": {
                         "type": "folder",
                         "size": null,
                         "modified": null,
                         "content": {
-                            "data": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "supported_languages.py": {
-                                        "type": "file",
-                                        "size": "1K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "code_vector_repository.py": {
-                                        "type": "file",
-                                        "size": "2K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "file_repository.py": {
-                                        "type": "file",
-                                        "size": "9K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "__init__.py": {
-                                        "type": "file",
-                                        "size": "156B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "document_chunker.py": {
-                                        "type": "file",
-                                        "size": "4K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
+                            "steps.py": {
+                                "type": "file",
+                                "size": "32K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
                             },
-                            "cli": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "main.py": {
-                                        "type": "file",
-                                        "size": "6K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "collect.py": {
-                                        "type": "file",
-                                        "size": "4K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "file_selector.py": {
-                                        "type": "file",
-                                        "size": "14K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "learning.py": {
-                                        "type": "file",
-                                        "size": "7K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "__init__.py": {
-                                        "type": "file",
-                                        "size": "1K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
+                            "token_usage.py": {
+                                "type": "file",
+                                "size": "5K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
                             },
-                            "preprompts": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {}
+                            "chat_to_files.py": {
+                                "type": "file",
+                                "size": "8K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
                             },
-                            "core": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "steps.py": {
-                                        "type": "file",
-                                        "size": "32K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "token_usage.py": {
-                                        "type": "file",
-                                        "size": "5K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "chat_to_files.py": {
-                                        "type": "file",
-                                        "size": "8K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "ai.py": {
-                                        "type": "file",
-                                        "size": "11K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "domain.py": {
-                                        "type": "file",
-                                        "size": "906B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "__init__.py": {
-                                        "type": "file",
-                                        "size": "686B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
+                            "ai.py": {
+                                "type": "file",
+                                "size": "11K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "domain.py": {
+                                "type": "file",
+                                "size": "906B",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
                             },
                             "__init__.py": {
                                 "type": "file",
-                                "size": "200B",
-                                "modified": "2023-12-31 08:59:08",
+                                "size": "686B",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             }
                         }
                     },
-                    "sys": {
+                    "__init__.py": {
+                        "type": "file",
+                        "size": "200B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    }
+                }
+            },
+            "sys": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {
+                    "explorer.py": {
+                        "type": "file",
+                        "size": "18K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "example.txt": {
+                        "type": "file",
+                        "size": "38B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "lib_test.py": {
+                        "type": "file",
+                        "size": "340B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "sample.txt": {
+                        "type": "file",
+                        "size": "0B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "tests.py": {
+                        "type": "file",
+                        "size": "0B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "example.zip": {
+                        "type": "file",
+                        "size": "14K",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "download": {
                         "type": "folder",
                         "size": null,
                         "modified": null,
                         "content": {
-                            "explorer.py": {
-                                "type": "file",
-                                "size": "18K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
                             "example.txt": {
                                 "type": "file",
-                                "size": "38B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "lib_test.py": {
-                                "type": "file",
-                                "size": "340B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "sample.txt": {
-                                "type": "file",
-                                "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "tests.py": {
-                                "type": "file",
-                                "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "example.zip": {
-                                "type": "file",
-                                "size": "14K",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "download": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "example.txt": {
-                                        "type": "file",
-                                        "size": "32B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "sample.json": {
-                                        "type": "file",
-                                        "size": "0B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
-                            },
-                            "engine": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "gemini.py": {
-                                        "type": "file",
-                                        "size": "0B",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
-                            },
-                            "readme.md": {
-                                "type": "file",
-                                "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
+                                "size": "32B",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             },
                             "sample.json": {
                                 "type": "file",
                                 "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
-                            },
-                            "new_file.txt": {
-                                "type": "file",
-                                "size": "36B",
-                                "modified": "2023-12-31 08:59:16",
-                                "content": null
-                            },
-                            "var.env": {
-                                "type": "file",
-                                "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "injector": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "fixer.py": {
-                                        "type": "file",
-                                        "size": "7K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "injector2.py": {
-                                        "type": "file",
-                                        "size": "7K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    },
-                                    "injector1.py": {
-                                        "type": "file",
-                                        "size": "13K",
-                                        "modified": "2023-12-31 08:59:08",
-                                        "content": null
-                                    }
-                                }
                             }
                         }
                     },
-                    "Acknowledgements.md": {
-                        "type": "file",
-                        "size": "318B",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    ".pre-commit-config.yaml": {
-                        "type": "file",
-                        "size": "686B",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    "docker-compose.yml": {
-                        "type": "file",
-                        "size": "373B",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    "DISCLAIMER.md": {
-                        "type": "file",
-                        "size": "1K",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    "docker": {
+                    "engine": {
                         "type": "folder",
                         "size": null,
                         "modified": null,
                         "content": {
-                            "entrypoint.sh": {
+                            "gemini.py": {
                                 "type": "file",
-                                "size": "353B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            },
-                            "README.md": {
-                                "type": "file",
-                                "size": "946B",
-                                "modified": "2023-12-31 08:59:08",
+                                "size": "0B",
+                                "modified": "2023-12-31 13:12:28",
                                 "content": null
                             }
                         }
-                    },
-                    ".readthedocs.yaml": {
-                        "type": "file",
-                        "size": "819B",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
                     },
                     "readme.md": {
                         "type": "file",
-                        "size": "5K",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    ".env.template": {
-                        "type": "file",
-                        "size": "138B",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    "system_summary.json": {
-                        "type": "file",
-                        "size": "11M",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    "pyproject.toml": {
-                        "type": "file",
-                        "size": "2K",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    },
-                    "view": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "sticky_pannel.py": {
-                                "type": "file",
-                                "size": "0B",
-                                "modified": "2023-12-31 08:59:08",
-                                "content": null
-                            }
-                        }
-                    },
-                    "MANIFEST.in": {
-                        "type": "file",
-                        "size": "44B",
-                        "modified": "2023-12-31 08:59:08",
-                        "content": null
-                    }
-                }
-            }
-        }
-    },
-    ".git": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "logs": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "refs": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "heads": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {}
-                            },
-                            "remotes": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {
-                                    "origin": {
-                                        "type": "folder",
-                                        "size": null,
-                                        "modified": null,
-                                        "content": {}
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            },
-            "objects": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "e2": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "48": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "f2": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "pack": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "pack-ebde9485f87b2ce338ef58a682e42579b2e29ff0.idx": {
-                                "type": "file",
-                                "size": "8K",
-                                "modified": "2023-12-31 07:59:32",
-                                "content": null
-                            }
-                        }
-                    },
-                    "cf": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "98": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "00": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "21": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "63": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "c4": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "info": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "c6": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "53": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "51": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "26": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "e8": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "11": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    }
-                }
-            },
-            "info": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {}
-            },
-            "refs": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "heads": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "tags": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {}
-                    },
-                    "remotes": {
-                        "type": "folder",
-                        "size": null,
-                        "modified": null,
-                        "content": {
-                            "origin": {
-                                "type": "folder",
-                                "size": null,
-                                "modified": null,
-                                "content": {}
-                            }
-                        }
-                    }
-                }
-            },
-            "branches": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {}
-            },
-            "hooks": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {}
-            }
-        }
-    },
-    "docs": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "tracing_debugging.md": {
-                "type": "file",
-                "size": "997B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "open_models.md": {
-                "type": "file",
-                "size": "1K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "DOCS_BUILDING.md": {
-                "type": "file",
-                "size": "2K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "intro": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "scripts.md": {
-                        "type": "file",
-                        "size": "1K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "chat_parsing.md": {
-                        "type": "file",
-                        "size": "2K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "main_script.md": {
-                        "type": "file",
-                        "size": "2K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "ai_class.md": {
-                        "type": "file",
-                        "size": "919B",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "gate.md": {
-                        "type": "file",
-                        "size": "2K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "db_class.md": {
-                        "type": "file",
-                        "size": "1K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "# Table of Contents.md": {
-                        "type": "file",
-                        "size": "779B",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "harmony_db_ai_steps.md": {
-                        "type": "file",
-                        "size": "3K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "repository_stats.md": {
-                        "type": "file",
-                        "size": "1K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "steps_module.md": {
-                        "type": "file",
-                        "size": "2K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "preprompts.md": {
-                        "type": "file",
-                        "size": "3K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "quick_overview.md": {
-                        "type": "file",
-                        "size": "3K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    }
-                }
-            },
-            "make.bat": {
-                "type": "file",
-                "size": "776B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "requirements.txt": {
-                "type": "file",
-                "size": "272B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "conf.py": {
-                "type": "file",
-                "size": "5K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "create_api_rst.py": {
-                "type": "file",
-                "size": "2K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            }
-        }
-    },
-    "instabuildhub": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "data": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "supported_languages.py": {
-                        "type": "file",
-                        "size": "1K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "code_vector_repository.py": {
-                        "type": "file",
-                        "size": "2K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "file_repository.py": {
-                        "type": "file",
-                        "size": "9K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "__init__.py": {
-                        "type": "file",
-                        "size": "156B",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "document_chunker.py": {
-                        "type": "file",
-                        "size": "4K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    }
-                }
-            },
-            "cli": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "main.py": {
-                        "type": "file",
-                        "size": "6K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "collect.py": {
-                        "type": "file",
-                        "size": "4K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "file_selector.py": {
-                        "type": "file",
-                        "size": "14K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "learning.py": {
-                        "type": "file",
-                        "size": "7K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "__init__.py": {
-                        "type": "file",
-                        "size": "1K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    }
-                }
-            },
-            "preprompts": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {}
-            },
-            "core": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "steps.py": {
-                        "type": "file",
-                        "size": "32K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "token_usage.py": {
-                        "type": "file",
-                        "size": "5K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "chat_to_files.py": {
-                        "type": "file",
-                        "size": "8K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "ai.py": {
-                        "type": "file",
-                        "size": "11K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "domain.py": {
-                        "type": "file",
-                        "size": "906B",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "__init__.py": {
-                        "type": "file",
-                        "size": "686B",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    }
-                }
-            },
-            "__init__.py": {
-                "type": "file",
-                "size": "200B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            }
-        }
-    },
-    "sys": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "explorer.py": {
-                "type": "file",
-                "size": "18K",
-                "modified": "2023-12-31 08:09:22",
-                "content": null
-            },
-            "example.txt": {
-                "type": "file",
-                "size": "38B",
-                "modified": "2023-12-31 08:04:09",
-                "content": null
-            },
-            "lib_test.py": {
-                "type": "file",
-                "size": "340B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "sample.txt": {
-                "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "tests.py": {
-                "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "example.zip": {
-                "type": "file",
-                "size": "14K",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "download": {
-                "type": "folder",
-                "size": null,
-                "modified": null,
-                "content": {
-                    "example.txt": {
-                        "type": "file",
-                        "size": "32B",
-                        "modified": "2023-12-31 07:59:32",
+                        "size": "0B",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     },
                     "sample.json": {
                         "type": "file",
                         "size": "0B",
-                        "modified": "2023-12-31 07:59:32",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
+                    },
+                    "new_file.txt": {
+                        "type": "file",
+                        "size": "36B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "var.env": {
+                        "type": "file",
+                        "size": "0B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "injector": {
+                        "type": "folder",
+                        "size": null,
+                        "modified": null,
+                        "content": {
+                            "fixer.py": {
+                                "type": "file",
+                                "size": "7K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "injector2.py": {
+                                "type": "file",
+                                "size": "7K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            },
+                            "injector1.py": {
+                                "type": "file",
+                                "size": "13K",
+                                "modified": "2023-12-31 13:12:28",
+                                "content": null
+                            }
+                        }
                     }
                 }
             },
-            "engine": {
+            "Acknowledgements.md": {
+                "type": "file",
+                "size": "318B",
+                "modified": "2023-12-31 13:12:28",
+                "content": null
+            },
+            "system manipulator": {
                 "type": "folder",
                 "size": null,
                 "modified": null,
                 "content": {
-                    "gemini.py": {
+                    "manipulator.py": {
                         "type": "file",
-                        "size": "0B",
-                        "modified": "2023-12-31 07:59:32",
+                        "size": "2K",
+                        "modified": "2023-12-31 13:12:28",
                         "content": null
                     }
                 }
             },
+            ".pre-commit-config.yaml": {
+                "type": "file",
+                "size": "686B",
+                "modified": "2023-12-31 13:12:28",
+                "content": null
+            },
+            "docker-compose.yml": {
+                "type": "file",
+                "size": "373B",
+                "modified": "2023-12-31 13:12:28",
+                "content": null
+            },
+            "DISCLAIMER.md": {
+                "type": "file",
+                "size": "1K",
+                "modified": "2023-12-31 13:12:28",
+                "content": null
+            },
+            "docker": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {
+                    "entrypoint.sh": {
+                        "type": "file",
+                        "size": "353B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    },
+                    "README.md": {
+                        "type": "file",
+                        "size": "946B",
+                        "modified": "2023-12-31 13:12:28",
+                        "content": null
+                    }
+                }
+            },
+            ".readthedocs.yaml": {
+                "type": "file",
+                "size": "819B",
+                "modified": "2023-12-31 13:12:28",
+                "content": null
+            },
             "readme.md": {
                 "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
+                "size": "5K",
+                "modified": "2023-12-31 13:12:28",
                 "content": null
             },
-            "sample.json": {
+            ".env.template": {
                 "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
+                "size": "138B",
+                "modified": "2023-12-31 13:12:28",
                 "content": null
             },
-            "new_file.txt": {
+            "system_summary.json": {
                 "type": "file",
-                "size": "36B",
-                "modified": "2023-12-31 08:11:48",
+                "size": "20M",
+                "modified": "2023-12-31 13:12:29",
                 "content": null
             },
-            "var.env": {
+            "pyproject.toml": {
                 "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
+                "size": "2K",
+                "modified": "2023-12-31 13:12:28",
+                "content": null
+            },
+            "view": {
+                "type": "folder",
+                "size": null,
+                "modified": null,
+                "content": {
+                    "sticky_pannel.py": {
+                        "type": "file",
+                        "size": "0B",
+                        "modified": "2023-12-31 13:12:29",
+                        "content": null
+                    }
+                }
+            },
+            "MANIFEST.in": {
+                "type": "file",
+                "size": "44B",
+                "modified": "2023-12-31 13:12:28",
                 "content": null
             },
             "injector": {
@@ -1743,118 +946,14 @@
                 "size": null,
                 "modified": null,
                 "content": {
-                    "fixer.py": {
+                    "injector.py": {
                         "type": "file",
-                        "size": "7K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "injector2.py": {
-                        "type": "file",
-                        "size": "7K",
-                        "modified": "2023-12-31 07:59:32",
-                        "content": null
-                    },
-                    "injector1.py": {
-                        "type": "file",
-                        "size": "13K",
-                        "modified": "2023-12-31 07:59:32",
+                        "size": "3K",
+                        "modified": "2023-12-31 13:13:48",
                         "content": null
                     }
                 }
             }
         }
-    },
-    "Acknowledgements.md": {
-        "type": "file",
-        "size": "318B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    ".pre-commit-config.yaml": {
-        "type": "file",
-        "size": "686B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "docker-compose.yml": {
-        "type": "file",
-        "size": "373B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "DISCLAIMER.md": {
-        "type": "file",
-        "size": "1K",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "docker": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "entrypoint.sh": {
-                "type": "file",
-                "size": "353B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            },
-            "README.md": {
-                "type": "file",
-                "size": "946B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            }
-        }
-    },
-    ".readthedocs.yaml": {
-        "type": "file",
-        "size": "819B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "readme.md": {
-        "type": "file",
-        "size": "5K",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    ".env.template": {
-        "type": "file",
-        "size": "138B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "system_summary.json": {
-        "type": "file",
-        "size": "11M",
-        "modified": "2023-12-31 08:22:28",
-        "content": null
-    },
-    "pyproject.toml": {
-        "type": "file",
-        "size": "2K",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
-    },
-    "view": {
-        "type": "folder",
-        "size": null,
-        "modified": null,
-        "content": {
-            "sticky_pannel.py": {
-                "type": "file",
-                "size": "0B",
-                "modified": "2023-12-31 07:59:32",
-                "content": null
-            }
-        }
-    },
-    "MANIFEST.in": {
-        "type": "file",
-        "size": "44B",
-        "modified": "2023-12-31 07:59:32",
-        "content": null
     }
 }
