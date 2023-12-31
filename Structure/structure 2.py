@@ -221,7 +221,7 @@ if __name__ == "__main__":
 
     # setting the project directory
 
-    instabuildhub_path = r"C:\Users\ADAN COMPUTER\Desktop\instabuildhub"
+    instabuildhub_path = r"/content/Instabuild-Hub-dev"
     project_structure = ProjectStructure(
         base_path=instabuildhub_path,
         include_file_types=[
