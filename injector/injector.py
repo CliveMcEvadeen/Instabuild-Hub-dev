@@ -45,7 +45,7 @@ class CodeInjector:
             if backup:
                 backup_path = self._create_backup(target_file)
 
-            # Inject code into the target file
+            # Inject code into the target file as specified
             with open(target_file, "a") as file:
                 file.write("\n" + code_to_inject)
 
