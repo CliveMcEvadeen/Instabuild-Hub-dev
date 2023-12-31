@@ -1,0 +1,24 @@
+{
+    "Structure": {
+        "data.json": {
+            "type": "file",
+            "size": "2M",
+            "modified": "2023-12-30 03:35:45"
+        },
+        "project_structure.json": {
+            "type": "file",
+            "size": "438B",
+            "modified": "2023-12-30 04:10:28"
+        },
+        "structure.py": {
+            "type": "file",
+            "size": "13K",
+            "modified": "2023-12-30 04:10:20"
+        }
+    },
+    "Summary": {
+        "Total Project Size": "2M",
+        "Number of Folders": 0,
+        "Number of Files": 3
+    }
+}
